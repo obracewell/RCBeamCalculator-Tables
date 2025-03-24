@@ -61,3 +61,16 @@
 
   <img src="https://raw.githubusercontent.com/obracewell/RCBeamCalculator-Tables/refs/heads/main/assets/RCTables-12.png" 
         alt="A.13" />
+
+<script>
+        const images = document.querySelectorAll('img');
+
+        images.forEach(img => {
+            img.onload = function() {
+                img.width = img.naturalWidth / 2; // Set width to 50% of original
+            };
+        });
+    </script>
+
+</body>
+</html>
